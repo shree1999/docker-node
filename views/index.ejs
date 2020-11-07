@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="display">
+        <div class="result-display__goals">
+          <h2>Course Goals</h2>
+          <h4><%=goal%></h4>
+        </div>
+      </section>
+
+      <section class="display">
+        <div class="user-section__form">
+          <h2>Enter Course Goal</h2>
+          <form action="/get-goal" method="POST">
+            <input type="text" name="userInput" placeholder="Enter a goal" />
+            <button>Sumbit Goal</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
